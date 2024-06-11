@@ -1,6 +1,6 @@
 # SYSC 3110 Project – Plants vs Zombies: The Puzzle! 
 
-## Milestone 1 (master branch) - Completed On: Monday, October 29th, 2018
+## Milestone 1 (master branch) 
 * Implement a text-based version of the popular Plants vs Zombies (PvZ) game.
 
 ### Implementations
@@ -9,7 +9,7 @@
 * Plants have two subclasses: PassivePlant and ShooterPlant
 
 * Sunflower; subclass of PassivePlant
-  - Generates 50 sun every four turns
+  - Generates 50 suns every four turns
   - Cost = 50 sun
   - Hit Threshold = 5 damage.
 
@@ -29,12 +29,12 @@
 
 #### GAME RUNNABLE - Jolar Tabungar
 ##### LEVEL:
-* Keeps track of the current game state, the states of the five lawns and advances to next states:
-   - Keeps track of waveCount, number of zombies remaining in wave, int[5] lawns
+* Keeps track of the current game state, the states of the five lawns, and advances to next states:
+   - Keeps track of waveCount, number of zombies remaining in a wave, int[5] lawns
    - Each state advances to the next due to player command and plant and zombie behavior 
     
 * The central logic component, tells plants and zombies what to do:
-   - Peashooters will attack zombies in their lawn every turn, only damages the zombie closest to them (in front of them)
+   - Peashooters will attack zombies in their lawn every turn, only damaging the zombie closest to them (in front of them)
    - Tells Sunflowers to generate sun every turn, but a sunflower keeps track of when it actually produces sun
    - Zombies will walk left until they encounter a plant; they will stop and proceed attacking until the plant is dead
    - When a zombie reaches the end of the lawn, the lawn mower is triggered and clears that lawn of all zombies
